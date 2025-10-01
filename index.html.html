@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDIC SALUD</title>
+  <title>Farmacia & Servicios Médicos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #00796b; color: white; padding: 20px; text-align: center; }
+    nav { background: #004d40; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; }
+    h2 { color: #00796b; }
+    footer { background: #004d40; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    .product, .doctor { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    .product img, .doctor img { max-width: 150px; border-radius: 10px; display: block; margin-bottom: 10px; }
+    button { background: #00796b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #004d40; }
+    .whatsapp-btn { background: #25D366; margin: 5px; }
+    .whatsapp-btn:hover { background: #128C7E; }
+    input, textarea { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 contenteditable="true">MEDIC SALUD</h1>
+  <h1 contenteditable="true">Farmacia & Servicios Médicos</h1>
+  <p contenteditable="true">Venta de Medicamentos Químicos y Naturales</p>
+  <p contenteditable="true">Prevenciòn, diagnostico y tratamiento de todo tipo de enfermedades</p>
+  <p contenteditable="true">Atencion Medica con especialista en Seguridad y Salud ocupacional & Servicio con especialista en  Nefrología al cuidado de tus riñones</p>
+</header>
+
+<nav>
+  <a href="#productos">Medicamentos</a>
+  <a href="#servicios">Servicios Medicos</a>
+  <a href="#medicos">Médicos</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#citas">Reservar Cita</a>
+</nav>
+
+<section id="Medicamentos">
+  <h2>Productos</h2>
+  <div id="product-list"></div>
+  <button onclick="addProduct()">Agregar Producto</button>
+  <button onclick="addProduct()">ViTAMINAS</button>
+  <button onclick="addProduct()">ANALGESICOS</button>
+  <button onclick="addProduct()">ANTIBIOTICOS</button>
+  <button onclick="addProduct()">ANTIVIRALES</button>
+  <button onclick="addProduct()">SALUD FEMENINA</button>
+  <button onclick="addProduct()">SALUD MASCULINA</button>
+  <button onclick="addProduct()">SALUD ORAL</button>
+  <button onclick="addProduct()">ZONA INTIMA FEMENINA</button>
+  <button onclick="addProduct()">ZONA INTIMA MASCULINA</button>
+  <button onclick="addProduct()">SALUD DIGESTIVA</button>
+  <button onclick="addProduct()">PRODUCTOS NATURALES</button>
+  <button onclick="addProduct()">HIDRATANTES</button>
+  <button onclick="exportProducts()">Exportar Productos</button>
+  <button onclick="importProducts()">Importar Productos</button> 
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <ul>
+    <li contenteditable="true">Venta de Medicamentos químicos y naturales</li>
+  </ul>
+    <li contenteditable="true">Consulta en médicina General</li>
+    <li contenteditable="true">Consula en Seguridad y Salud Ocupacional</li>
+    <li contenteditable="true">Medicina preventiva</li>
+    <li contenteditable="true">Planificacion familiar</li>
+    <li contenteditable="true">Colocacion y retiro de implantes</li>
+    <li contenteditable="true">Control y seguimiento de enfermedades</li>
+    <li contenteditable="true">Colocacion de sueros y administarcion de medicamentos</li>
+    <li contenteditable="true">Curacion, sutura de heridas y retiro de puntos</li>
+    <li contenteditable="true">Cambio, colocacion, retiro y mantenimiento de sondas vesicales, fundas de colostomia  y colocacion de inyecciones</li>
+    <li contenteditable="true">Solicitud de estudios y examenes de laboratorios</li>
+    <li contenteditable="true">Diagnostico de enfermedades y atencion de emergencias medicas</li>
+    <li contenteditable="true">Control y Diagnostico de enfermedades renales</li>
+    <li contenteditable="true">Consulta especializada en Nefrología</li>
+    <li contenteditable="true">Diagnostico y tratamiento de todo tipo de afecciones renales</li>
+    <li contenteditable="true">calculos renales</li>
+    <li contenteditable="true">Diagnostico y tratamiento de insuficiencia renal cronica y aguda</li>
+    <li contenteditable="true">Control y seguimiento en cancer de riñon</li>
+    <li contenteditable="true">Glomerulonefritis(inflamacion de los riñones)</li>
+    <li contenteditable="true">Control y tratamiento del sindrome nefrotico y nefritico</li>
+    <li contenteditable="true">Contro  de enfermedad renal en entapa terminal</li>
+    <li contenteditable="true">Manejo y preparacion de transplante renal</li>
+    <li contenteditable="true">Evaluacion y diagnostico de malformaciones renales</li>
+
+
+</section>
+
+<section id="medicos">
+  <h2>Nuestros Médicos</h2>
+  <div class="doctor">
+    <img src="doctor_isabel.jpg" alt="Dra. Isabel Chagmana">
+    <h3 contenteditable="true">Dra. Isabel Chagmana</h3>
+    <p contenteditable="true">Médica en Seguridad y Salud Ocupacional</p>
+  </div>
+  <div class="doctor">
+    <img src="doctor_henry.jpg" alt="Dr. Henry Tuza">
+    <h3 contenteditable="true">Dr. Henry Tuza</h3>
+    <p contenteditable="true">Médico Especialista en Nefrólogia</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Correos: <a href="mailto:chagmanaisabel7@gmail.com">chagmanaisabel7@gmail.com</a>, 
+     <a href="mailto:henry94deyvid@gmail.com">henry94deyvid@gmail.com</a></p>
+  <button class="whatsapp-btn" onclick="openWhatsApp('0999030554')">WhatsApp 0999030554</button>
+  <button class="whatsapp-btn" onclick="openWhatsApp('0969773749')">WhatsApp 0969773749</button>
+</section>
+
+<section id="citas">
+  <h2>Reservar Cita</h2>
+  <form id="cita-form">
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
+    <input type="email" id="email" placeholder="Tu correo" required>
+    <textarea id="mensaje" placeholder="Motivo de la cita" required></textarea>
+    <button type="submit">Reservar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 MEDIC SALUD — Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  // Productos con edición y almacenamiento local
+  let products = JSON.parse(localStorage.getItem("products")) || [];
+
+  function renderProducts() {
+    const container = document.getElementById("product-list");
+    container.innerHTML = "";
+    products.forEach((p, index) => {
+      const div = document.createElement("div");
+      div.className = "product";
+      div.innerHTML = `
+        <img src="${p.image || 'placeholder.jpg'}" alt="Producto">
+        <h3 contenteditable="true" oninput="updateProduct(${index}, 'name', this.innerText)">${p.name}</h3>
+        <p contenteditable="true" oninput="updateProduct(${index}, 'desc', this.innerText)">${p.desc}</p>
+        <button onclick="removeProduct(${index})">Eliminar</button>
+        <input type="file" accept="image/*" onchange="uploadImage(event, ${index})">
+      `;
+      container.appendChild(div);
+    });
+    localStorage.setItem("products", JSON.stringify(products));
+  }
+
+  function addProduct() {
+    products.push({ name: "Nuevo producto", desc: "Descripción", image: "" });
+    renderProducts();
+  }
+
+  function removeProduct(index) {
+    products.splice(index, 1);
+    renderProducts();
+  }
+
+  function updateProduct(index, field, value) {
+    products[index][field] = value;
+    localStorage.setItem("products", JSON.stringify(products));
+  }
+
+  function exportProducts() {
+    const data = JSON.stringify(products);
+    const blob = new Blob([data], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "productos.json";
+    a.click();
+  }
+
+  function importProducts() {
+    const input = prompt("Pega aquí el JSON de productos:");
+    try {
+      products = JSON.parse(input);
+      renderProducts();
+    } catch {
+      alert("JSON inválido");
+    }
+  }
+
+  function uploadImage(event, index) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      products[index].image = e.target.result;
+      renderProducts();
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  }
+
+  // WhatsApp integración
+  function openWhatsApp(number) {
+    const msg = "Hola, quisiera más información de MEDIC SALUD.";
+    window.open(`https://wa.me/593${number.slice(1)}?text=${encodeURIComponent(msg)}`, "_blank");
+  }
+
+  // Reservas
+  document.getElementById("cita-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const reserva = { nombre, email, mensaje, fecha: new Date().toLocaleString() };
+    let reservas = JSON.parse(localStorage.getItem("reservas")) || [];
+    reservas.push(reserva);
+    localStorage.setItem("reservas", JSON.stringify(reservas));
+
+    alert("Cita reservada. También puede escribirnos a WhatsApp.");
+    document.getElementById("cita-form").reset();
+  });
+
+  renderProducts();
+</script>
+
+</body>
+</html>
